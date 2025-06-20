@@ -37,24 +37,27 @@ class ContactCard extends StatelessWidget {
             const SizedBox(height: 30), // Padding from top
             CircleAvatar(
               radius: 60,
-              backgroundImage: AssetImage('assets/profile_picture.jpg'), // your asset
+              backgroundImage: AssetImage(
+                'assets/profile_picture.jpg',
+              ), // your asset
             ),
             const SizedBox(height: 10), // 10 unit spacing
             const Text(
               'naina',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const Text(
               'Software Engineer',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.grey,
-              ),
+              style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 20),
+            Card(
+              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+              child: ListTile(
+                leading: const Icon(Icons.phone),
+                title: const Text('8896256080'),
+              ),
+            ),
             Card(
               margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               child: ListTile(
