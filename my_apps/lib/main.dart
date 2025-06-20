@@ -61,13 +61,6 @@ class ContactCard extends StatelessWidget {
             Card(
               margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               child: ListTile(
-                leading: const Icon(Icons.phone),
-                title: const Text('8896256080'),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              child: ListTile(
                 leading: const Icon(Icons.email),
                 title: const Text('naina.verma_cs23@gla.ac.in'),
               ),
